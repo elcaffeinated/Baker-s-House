@@ -1,0 +1,409 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #483E31; 
+  padding: 15px 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+/*tentative*/
+
+#hero {
+  background-image: url('../img/image 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Logo */
+.logo {
+  height: 125px;
+  width: auto;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.navbar {
+  font-size: 1.0rem;
+  font-family: 'Quicksand', sans-serif;
+ 
+}
+
+/* Navigation */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 85px;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff; 
+  font-weight: 600;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding: 5px 0;
+  
+
+}
+
+/* Hover & Active link */
+.navbar a:hover,
+.navbar a.active {
+  color: #dfab01; /* orange accent */
+  border-bottom: 2px solid #dfab01;
+  
+}
+
+#hero {
+  height: 90vh; /* covers most of the screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 5em;
+  font-family:'Dancing Script', cursive;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+}
+
+
+.shop-button {
+  display: inline-block;
+  background-color: #ffffff; 
+  color: #704500;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #eda600;
+}
+
+
+/*ABOUT SECTION*/
+.About {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #f8f4ef;
+  padding: 100px;
+  margin: 0;
+  
+}
+
+.About h2 {
+  font-size: 2.0rem;
+  color: #483E31;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.About img {
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(143, 97, 4, 0.69);
+  transition: transform 0.3s ease;    
+}
+
+.About img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 16px rgba(143, 97, 4, 0.8);
+}
+
+.About p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #483E31;
+  text-shadow: 0px 2px 10px rgba(243, 203, 111, 0.69);
+  
+}
+
+.About-text p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  color:#F8A012;
+  font-weight: bold;
+  
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;            
+  flex: 1;  
+  margin-top: 20px;              
+}
+
+/*BESTSELLERS*/
+.Best-sellers {
+  
+  padding: 60px 20px;
+  text-align: left;
+  color: rgb(209, 134, 15);
+}
+/*tentative*/
+.Best-sellers {
+  background-image: url('../img/image 4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bestsellers-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.Best-sellers h1 {
+  margin-bottom: 15px;
+  border-bottom: 3px solid goldenrod;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 5em;
+  font-family:'Dancing Script', cursive;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.Best-sellers p {
+  font-size: 0.75rem;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  background: rgb(255, 255, 255);
+  color: #BD7500;
+  padding: 20px;
+  border-radius: 60px;
+  width: 250px;
+  box-shadow: 0px 4px 12px rgba(143, 97, 4, 0.69);
+  transition: transform 0.3s ease;    
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 16px rgba(143, 97, 4, 0.8);
+}
+
+/*BOOKING FORM*/
+
+.form {
+  background: #f8f4ef;
+  padding: 40px;
+}
+
+.booking-form {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 20px;
+  background: #d1c0a7;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.form-btn{
+  text-align: center;
+}
+
+.form-btn button{
+  background:#3d2b1f; /* dark brown */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: 'Quicksand', sans-serif ;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(104, 101, 97, 0.69);
+  
+}
+
+/* Left column boxes */
+.info {
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  border: 10px solid #F1E8D9;     
+  border-radius: 20px;            
+  box-shadow: inset 0 0 0 100px #ffffff;
+  
+}
+
+
+.info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  
+}
+
+.info h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #6b4a2b;
+  text-align: left;
+}
+
+.info p {
+  color: #b87333; 
+  font-style: italic;
+  text-align: center;
+}
+
+.form-column {
+  background: #F1E8D9;       
+  border-radius: 20px;       
+  padding: 30px;             
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 100%;               
+  height: 100%;    
+  color:#dfab01          
+}
+
+
+
+
+/* Right column form */
+.form-column h2 {
+  font-family: 'Quicksand', serif;
+  color: #6b4a2b;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  color:#dfab01;
+  
+}
+
+.form-group2{
+  gap: 0px;
+  color:#dfab01;
+}
+
+
+
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  color:rgb(209, 134, 15);
+}
+
+.booking-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.booking-form button {
+  background:#3d2b1f; /* dark brown */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.booking-form button:hover {
+  background: #5a3c28;
+}
+
+
+/*FOOTER*/
+/* Footer container */
+footer {
+  background-color: #483E31; 
+  color: #d29303; 
+  padding: 5px 5px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-right: 50px;
+}
+.footer-content div {
+  flex: 1;
+  min-width: 200px;
+}
+.footer-content h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  text-align: right;
+  justify-content: space-between;
+  color:#fff;
+}
+.footer-content p {
+  line-height: 1.6;
+  font-size: 0.7em;
+  text-align: right;
+}
+
+.footer-content a {
+    color: #d29303;
+    text-decoration: none; 
+}
+.footer-content a:hover {
+    text-decoration: underline; 
+}
+
+.footer-logo {
+    height: 100px;
+    width: auto;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 0;
+}
+.copy {
+  text-align: center;
+  font-size: 0.75rem;
+  border-top: 0.5px solid rgb(240, 162, 37);
+  padding-top: 10px;
+  color: #ffffff;
+}
